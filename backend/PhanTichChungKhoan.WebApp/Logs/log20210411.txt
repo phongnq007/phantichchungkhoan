@@ -1,0 +1,39 @@
+2021-04-11 13:43:34.871 [INF] [] Starting web host
+2021-04-11 13:43:43.642 [INF] [Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2021-04-11 13:43:43.649 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2021-04-11 13:43:43.650 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+2021-04-11 13:43:43.651 [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\Phong-Laptop\source\repos\PhanTichChungKhoan\PhanTichChungKhoan.WebApp
+2021-04-11 13:44:52.066 [INF] [Microsoft.Hosting.Lifetime] Application is shutting down...
+2021-04-11 13:44:52.119 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.HoseTimedHostedService] HOSE background service is stopping.
+2021-04-11 13:45:06.921 [FTL] [] Host terminated unexpectedly
+System.UnauthorizedAccessException: Filename: redirection.config
+Error: Cannot read configuration file due to insufficient permissions
+
+
+   at Microsoft.Web.Administration.Interop.IAppHostAdminManager.GetAdminSection(String bstrSectionName, String bstrPath)
+   at Microsoft.Web.Administration.Configuration.GetSectionInternal(ConfigurationSection section, String sectionPath, String locationPath)
+   at Microsoft.Web.Administration.Configuration.GetSection(String sectionPath)
+   at Microsoft.Web.Administration.ServerManager.ApplicationPoolsSectionCreator()
+   at Microsoft.Web.Administration.Lazy.Initialize[T](T& target, CreateInstanceDelegate`1 valueFactory)
+   at Microsoft.Web.Administration.ServerManager.get_ApplicationPoolsSection()
+   at Microsoft.Web.Administration.ServerManager.ApplicationPoolCollectionCreator()
+   at Microsoft.Web.Administration.Lazy.Initialize[T](T& target, CreateInstanceDelegate`1 valueFactory)
+   at Microsoft.Web.Administration.ServerManager.get_ApplicationPools()
+   at PhanTichChungKhoan.WebApp.Program.SetPoolIdleTimeout() in C:\Users\Phong-Laptop\source\repos\PhanTichChungKhoan\PhanTichChungKhoan.WebApp\Program.cs:line 66
+   at PhanTichChungKhoan.WebApp.Program.Main(String[] args) in C:\Users\Phong-Laptop\source\repos\PhanTichChungKhoan\PhanTichChungKhoan.WebApp\Program.cs:line 51
+2021-04-11 13:45:56.425 [FTL] [] Host terminated unexpectedly
+System.UnauthorizedAccessException: Filename: redirection.config
+Error: Cannot read configuration file due to insufficient permissions
+
+
+   at Microsoft.Web.Administration.Interop.IAppHostAdminManager.GetAdminSection(String bstrSectionName, String bstrPath)
+   at Microsoft.Web.Administration.Configuration.GetSectionInternal(ConfigurationSection section, String sectionPath, String locationPath)
+   at Microsoft.Web.Administration.Configuration.GetSection(String sectionPath)
+   at Microsoft.Web.Administration.ServerManager.ApplicationPoolsSectionCreator()
+   at Microsoft.Web.Administration.Lazy.Initialize[T](T& target, CreateInstanceDelegate`1 valueFactory)
+   at Microsoft.Web.Administration.ServerManager.get_ApplicationPoolsSection()
+   at Microsoft.Web.Administration.ServerManager.ApplicationPoolCollectionCreator()
+   at Microsoft.Web.Administration.Lazy.Initialize[T](T& target, CreateInstanceDelegate`1 valueFactory)
+   at Microsoft.Web.Administration.ServerManager.get_ApplicationPools()
+   at PhanTichChungKhoan.WebApp.Program.SetPoolIdleTimeout() in C:\Users\Phong-Laptop\source\repos\PhanTichChungKhoan\PhanTichChungKhoan.WebApp\Program.cs:line 67
+   at PhanTichChungKhoan.WebApp.Program.Main(String[] args) in C:\Users\Phong-Laptop\source\repos\PhanTichChungKhoan\PhanTichChungKhoan.WebApp\Program.cs:line 37

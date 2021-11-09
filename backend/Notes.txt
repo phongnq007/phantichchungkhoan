@@ -1,0 +1,33 @@
+Notes
+
+https://chromedriver.chromium.org/security-considerations
+
+
+dùng thêm cái này trong repository,  https://github.com/ardalis/specification
+
+project có dbcontext cần add package :  Microsoft.AspNetCore.Identity.EntityFrameworkCore, Microsoft.EntityFrameworkCore, Microsoft.EntityFrameworkCore.Design, Microsoft.EntityFrameworkCore.SqlServer, Microsoft.EntityFrameworkCore.Tools
+
+project startup cần add package : Microsoft.EntityFrameworkCore.Design, Microsoft.AspNetCore.Identity.UI
+
+
+add code:  services.AddDbContext<UserDbContext>(options =>
+               options.UseSqlServer(
+                   Configuration.GetConnectionString("DefaultConnection")));
+             services.AddDefaultIdentity<IdentityUser>(options =>
+                {
+                    options.SignIn.RequireConfirmedAccount = false;
+                    options.SignIn.RequireConfirmedEmail = false;
+                    options.SignIn.RequireConfirmedPhoneNumber = false;
+                })
+                .AddEntityFrameworkStores<UserDbContext>();
+add identity UI pages: https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity?view=aspnetcore-5.0&tabs=visual-studio
+add code:   app.UseAuthentication();
+            app.UseAuthorization();
+Authentication and authorization for SPAs:	https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity-api-authorization?view=aspnetcore-5.0#create-an-app-with-api-authorization-support
+
+
+meet error:
+Method not found: 'Microsoft.EntityFrameworkCore.Metadata.Builders.IndexBuilder Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1.HasIndex(System.Linq.Expressions.Expression`1<System.Func`2<System.__Canon,System.Object>>)'.
+solution: 
+các netstandard project, vô file .csproj sửa lại version cao hơn : <TargetFramework>netstandard2.1</TargetFramework>
+để có thể reference các EntityFrameworkCore package  mới nhất.

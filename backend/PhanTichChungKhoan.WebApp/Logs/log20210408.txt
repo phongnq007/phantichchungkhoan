@@ -1,0 +1,186 @@
+2021-04-08 21:48:05.709 [INF] [] Starting web host
+2021-04-08 21:48:09.547 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] HOSE background service running.
+2021-04-08 21:48:09.552 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] HNX background service running.
+2021-04-08 21:48:09.553 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.UpcomTimedHostedService] UPCOM background service running.
+2021-04-08 21:48:09.553 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] HOSE - Started crawling data.
+2021-04-08 21:48:09.555 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] HNX - Started crawling data.
+2021-04-08 21:48:09.561 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.UpcomTimedHostedService] UPCOM - Started crawling data.
+2021-04-08 21:48:09.850 [INF] [Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2021-04-08 21:48:09.852 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2021-04-08 21:48:09.853 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+2021-04-08 21:48:09.854 [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\Phong-Laptop\source\repos\PhanTichChungKhoan\PhanTichChungKhoan.WebApp
+2021-04-08 21:48:15.133 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Start inserting price data for HOSE.
+2021-04-08 21:48:15.321 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Start inserting price data for HOSE.
+2021-04-08 21:48:15.332 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Start inserting price data for HOSE.
+2021-04-08 21:48:31.132 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Number of tr elements crawled on HOSE : 360.
+2021-04-08 21:48:37.267 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Number of tr elements crawled on HOSE : 496.
+2021-04-08 21:48:40.479 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Number of tr elements crawled on HOSE : 750.
+2021-04-08 21:49:11.471 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Could not get price of symbols: ABT, ALT, AMC, ARM, ATS, BED, BLF, BPC, BTW, BXH, CJC, CKV, CLM, CPC, CTB, CTC, CTT, DAD, DHP, DNC, DPS, EBA, ECI, GDW, HBE, HCT, HGM, HJS, HKB, HLC, HPM*, HTC, HVT, L35, L40, L62, LBE, LCD, LO5, MCC, MKV, NFC, NHC, NHP*, NTH, PBP, PEN, PHN, PIA, PMP, PPE, PPY, PRC, PSC, PTD, QST, SAF, SD2, SDG, SDN, SEB, SFN, SJ1, SJC, SMN, TBX, TET, TFC, THS, TJC, TSB, TTL, TTT, VAT, VBC, VC9, VIE, VIF, VLA, VMI, VMS, VNC, VTH, VTL, VXB
+2021-04-08 21:49:11.474 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Number of symbols inserted to Db for HOSE : 275.
+2021-04-08 21:49:12.108 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] End inserting price data for HOSE.
+2021-04-08 21:49:12.920 [ERR] [Microsoft.EntityFrameworkCore.Database.Command] Failed executing DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC [dbo].[SyncPriceBoardData] 'HNX'
+2021-04-08 21:49:13.035 [ERR] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] HNX - Ended crawling data with error.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Procedure SyncPriceBoardData has no parameters and arguments were supplied.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRawAsync(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters, CancellationToken cancellationToken)
+   at PhanTichChungKhoan.Infrastructure.Repository.PriceBoardEfRepository.ExecuteSqlRawAsync(String sql) in C:\Users\Phong-Laptop\source\repos\PhanTichChungKhoan\PhanTichChungKhoan.Infrastructure\Repository\PriceBoardEfRepository.cs:line 21
+   at PhanTichChungKhoan.WebApp.BackgroundServices.HnxTimedHostedService.ExtractData() in C:\Users\Phong-Laptop\source\repos\PhanTichChungKhoan\PhanTichChungKhoan.WebApp\BackgroundServices\HnxTimedHostedService.cs:line 84
+ClientConnectionId:967e1acd-6cc9-46f6-b297-045772e0806d
+Error Number:8146,State:2,Class:16
+2021-04-08 21:49:26.757 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Could not get price of symbols: ATG, CLG, CMV, COM, DTL, DTT, EMC, FUCTVGF1, FUCTVGF2, HRC, HTL, L10, LBM, LGC, OPC, PGI, PME, SCD, SFC, SVI, TPC, VSI
+2021-04-08 21:49:26.759 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Number of symbols inserted to Db for HOSE : 474.
+2021-04-08 21:49:27.093 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] End inserting price data for HOSE.
+2021-04-08 21:49:31.296 [ERR] [Microsoft.EntityFrameworkCore.Database.Command] Failed executing DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC [dbo].[SyncPriceBoardData] 'HOSE'
+2021-04-08 21:49:31.401 [ERR] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] HOSE - Ended crawling data with error.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Procedure SyncPriceBoardData has no parameters and arguments were supplied.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRawAsync(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters, CancellationToken cancellationToken)
+   at PhanTichChungKhoan.Infrastructure.Repository.PriceBoardEfRepository.ExecuteSqlRawAsync(String sql) in C:\Users\Phong-Laptop\source\repos\PhanTichChungKhoan\PhanTichChungKhoan.Infrastructure\Repository\PriceBoardEfRepository.cs:line 21
+   at PhanTichChungKhoan.WebApp.BackgroundServices.HoseTimedHostedService.ExtractData() in C:\Users\Phong-Laptop\source\repos\PhanTichChungKhoan\PhanTichChungKhoan.WebApp\BackgroundServices\HoseTimedHostedService.cs:line 79
+ClientConnectionId:967e1acd-6cc9-46f6-b297-045772e0806d
+Error Number:8146,State:2,Class:16
+2021-04-08 21:49:49.092 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Could not get price of symbols: A32, AC4, ACS, ADP, AGF, AGX, ALV, AMP, APL, APT, AQN, ASA, ASD, ATA, ATD, AUM, AVC, AVF, B82, BBH, BBM, BCB, BCV, BDW, BEL, BGW, BHA, BHC, BHG, BHK, BHT, BIO, BKH, BLN, BLT, BLU, BLW, BMD, BMG, BMJ, BMN, BMV, BNW, BPW, BQB, BRS, BSD, BSH, BSQ, BT1, BT6, BTG, BTH, BTR, BTV, BVN, BXT, C12, C22, C36, CAB, CAD, CAM, CBC, CCA, CCH, CCP, CCT, CCV, CDG, CDH, CDR, CE1, CEC, CEG, CFM, CFV, CGL, CH5, CHC, CID, CKH, CMD, CMF, CMI, CMK, CMN, CMP, CMW, CNN, CPA, CPH, CPI, CPW, CSI, CT3, CT5, CT6, CTA, CTN, CTW, CVH, CXH, CYC, DAR, DBH, DBM, DBW, DCG, DCH, DCI, DCS, DCT, DDH, DDM, DFC, DHB, DHN, DIC, DKC, DKH, DLD, DLR, DLT, DM7, DNA, DNB, DND, DNH, DNL, DNN, DNS, DNT, DNY, DOC, DOP, DP2, DPD, DPP, DRG, DSP, DSS, DT4, DTB, DTE, DTG, DTV, DUS, DVW, DX2, DXD, DXL, E12, EAD, EFI, EIC, EME, EMG, EMS, EPC, FBA, FBC, FCC, FCS, FDG, FGL, FHN, FHS, FRM, FSO, FT1, FTI, G20, GER, GGG, GLC, GLW, GQN, GTK, GTT, H11, HAB, HAM, HAV, HAW, HBH, HBW, HC1, HC3, HCI, HCS, HDM, HDO, HDW, HEC, HES, HFS, HFX, HGA, HGC, HGR, HGT, HGW, HHN, HHR, HHV, HIZ, HJC, HKC, HKP, HLA, HLB, HLE, HLG, HLR, HLS, HLT, HMS, HNB, HNM, HNP, HNR, HNT, HPD, HRB, HSA, HSP, HTE, HTK, HTR, HTT, HTU, HTW, HUG, HUX, HVA, HVG, HWS, I10, IBD, IDP, IHK, IKH, IME, IN4, IPH, IRC, ISG, JOS, KAC, KBE, KCE, KGM, KHL, KHW, KLM, KSE, KSK, KTB, KTC, KTL, L44, LAW, LBC, LCC, LCW, LDW, LG9, LGM, LLM, LM3, LMC, LMH, LMI, LNC, LQN, LTC, LWS, MBN, MC3, MCI, MCT, MDA, MEC, MEF, MEG, MES, MGC, MGG, MH3, MHP, MHY, MIE, MLC, MND, MPY, MQB, MQN, MTB, MTC, MTH, MTL, MTM, MTS, MVC, MVN, MVY, MXC, NAC, NAU, NBT, NCP, ND2, NDF, NDP, NDW, NHV, NJC, NLS, NNB, NNQ, NOS, NQB, NQT, NSG, NSL, NSS, NTB, NTF*, NTR, NTT, NVP, NWT, ONW, PAI, PBT, PCC, PEC, PEQ, PHH, PID, PIS, PIV, PJS, PKR, PLE, PLO, PMJ, PMT, PMW, PND, PNG, PNP, PPI, PQN, PRT, PSG, PSN, PTE, PTG, PTH, PTK, PTO, PTT, PTX, PVA, PVE, PVH, PVR, PVX, PVY, PWS, PX1, PXA, PXC, PXM, PYU, QBR, QLD, QLT, QNT, QNU, QNW, RAT, RBC, RCC, RCD, RHN, RLC, RTH, RTS, S12, S27, S72, S96, SAL, SAP, SB1, SBD, SBM, SBR*, SCA, SCC, SCO, SCY, SD1, SD8, SDB, SDE, SDH, SDV, SDX, SDY, SEP, SGO, SHG, SHX, SKN, SNC, SOV, SP2, SPA, SPB, SPC, SPH, SPP, SQC, SSF, SSG, SSU, STL, STS, STT, STU, STW, SUM, SVG, SVH, SVL, T12, TA3, TA6, TAG, TAN, TAP, TAW, TB8, TBT, TCJ, TCK, TDB, TDF, TEC, TEL, TH1, THN
+2021-04-08 21:49:49.100 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Number of symbols inserted to Db for HOSE : 294.
+2021-04-08 21:49:49.203 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] End inserting price data for HOSE.
+2021-04-08 21:49:53.389 [ERR] [Microsoft.EntityFrameworkCore.Database.Command] Failed executing DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC [dbo].[SyncPriceBoardData] 'UPCOM'
+2021-04-08 21:49:53.458 [ERR] [PhanTichChungKhoan.WebApp.BackgroundServices.UpcomTimedHostedService] UPCOM - Ended crawling data with error.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Procedure SyncPriceBoardData has no parameters and arguments were supplied.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteNonQueryAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.ExecuteSqlRawAsync(DatabaseFacade databaseFacade, String sql, IEnumerable`1 parameters, CancellationToken cancellationToken)
+   at PhanTichChungKhoan.Infrastructure.Repository.PriceBoardEfRepository.ExecuteSqlRawAsync(String sql) in C:\Users\Phong-Laptop\source\repos\PhanTichChungKhoan\PhanTichChungKhoan.Infrastructure\Repository\PriceBoardEfRepository.cs:line 21
+   at PhanTichChungKhoan.WebApp.BackgroundServices.UpcomTimedHostedService.ExtractData() in C:\Users\Phong-Laptop\source\repos\PhanTichChungKhoan\PhanTichChungKhoan.WebApp\BackgroundServices\UpcomTimedHostedService.cs:line 84
+ClientConnectionId:967e1acd-6cc9-46f6-b297-045772e0806d
+Error Number:8146,State:2,Class:16
+2021-04-08 21:50:03.013 [INF] [Microsoft.Hosting.Lifetime] Application is shutting down...
+2021-04-08 21:50:03.052 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.UpcomTimedHostedService] UPCOM background service is stopping.
+2021-04-08 21:50:03.055 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] HNX background service is stopping.
+2021-04-08 21:50:03.056 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] HOSE background service is stopping.
+2021-04-08 22:01:01.079 [INF] [] Starting web host
+2021-04-08 22:01:03.745 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] HOSE background service running.
+2021-04-08 22:01:03.750 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] HNX background service running.
+2021-04-08 22:01:03.751 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.UpcomTimedHostedService] UPCOM background service running.
+2021-04-08 22:01:03.752 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] HOSE - Started crawling data.
+2021-04-08 22:01:03.755 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] HNX - Started crawling data.
+2021-04-08 22:01:03.757 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.UpcomTimedHostedService] UPCOM - Started crawling data.
+2021-04-08 22:01:04.088 [INF] [Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2021-04-08 22:01:04.161 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2021-04-08 22:01:04.165 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+2021-04-08 22:01:04.166 [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\Phong-Laptop\source\repos\PhanTichChungKhoan\PhanTichChungKhoan.WebApp
+2021-04-08 22:01:07.539 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Start inserting price data for HOSE.
+2021-04-08 22:01:07.539 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Start inserting price data for HOSE.
+2021-04-08 22:01:09.431 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Start inserting price data for HOSE.
+2021-04-08 22:01:28.820 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Number of tr elements crawled on HOSE : 496.
+2021-04-08 22:01:29.570 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Number of tr elements crawled on HOSE : 360.
+2021-04-08 22:01:44.369 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Number of tr elements crawled on HOSE : 909.
+2021-04-08 22:02:05.476 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Could not get price of symbols: ABT, ALT, AMC, ARM, ATS, BED, BLF, BPC, BTW, BXH, CJC, CKV, CLM, CPC, CTB, CTC, CTT, DAD, DHP, DNC, DPS, EBA, ECI, GDW, HBE, HCT, HGM, HJS, HKB, HLC, HPM*, HTC, HVT, L35, L40, L62, LBE, LCD, LO5, MCC, MKV, NFC, NHC, NHP*, NTH, PBP, PEN, PHN, PIA, PMP, PPE, PPY, PRC, PSC, PTD, QST, SAF, SD2, SDG, SDN, SEB, SFN, SJ1, SJC, SMN, TBX, TET, TFC, THS, TJC, TSB, TTL, TTT, VAT, VBC, VC9, VIE, VIF, VLA, VMI, VMS, VNC, VTH, VTL, VXB
+2021-04-08 22:02:05.497 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Number of symbols inserted to Db for HOSE : 275.
+2021-04-08 22:02:06.161 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] End inserting price data for HOSE.
+2021-04-08 22:02:10.860 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] HNX - Ended crawling data.
+2021-04-08 22:02:17.037 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Could not get price of symbols: ATG, CLG, CMV, COM, DTL, DTT, EMC, FUCTVGF1, FUCTVGF2, HRC, HTL, L10, LBM, LGC, OPC, PGI, PME, SCD, SFC, SVI, TPC, VSI
+2021-04-08 22:02:17.099 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Number of symbols inserted to Db for HOSE : 474.
+2021-04-08 22:02:17.232 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] End inserting price data for HOSE.
+2021-04-08 22:02:21.449 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] HOSE - Ended crawling data.
+2021-04-08 22:02:55.778 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Could not get price of symbols: A32, AC4, ACS, ADP, AGF, AGX, ALV, AMP, APL, APT, AQN, ASA, ASD, ATA, ATD, AUM, AVC, AVF, B82, BBH, BBM, BCB, BCV, BDW, BEL, BGW, BHA, BHC, BHG, BHK, BHT, BIO, BKH, BLN, BLT, BLU, BLW, BMD, BMG, BMJ, BMN, BMV, BNW, BPW, BQB, BRS, BSD, BSH, BSQ, BT1, BT6, BTG, BTH, BTR, BTV, BVN, BXT, C12, C22, C36, CAB, CAD, CAM, CBC, CCA, CCH, CCP, CCT, CCV, CDG, CDH, CDR, CE1, CEC, CEG, CFM, CFV, CGL, CH5, CHC, CID, CKH, CMD, CMF, CMI, CMK, CMN, CMP, CMW, CNN, CPA, CPH, CPI, CPW, CSI, CT3, CT5, CT6, CTA, CTN, CTW, CVH, CXH, CYC, DAR, DBH, DBM, DBW, DCG, DCH, DCI, DCS, DCT, DDH, DDM, DFC, DHB, DHN, DIC, DKC, DKH, DLD, DLR, DLT, DM7, DNA, DNB, DND, DNH, DNL, DNN, DNS, DNT, DNY, DOC, DOP, DP2, DPD, DPP, DRG, DSP, DSS, DT4, DTB, DTE, DTG, DTV, DUS, DVW, DX2, DXD, DXL, E12, EAD, EFI, EIC, EME, EMG, EMS, EPC, FBA, FBC, FCC, FCS, FDG, FGL, FHN, FHS, FRM, FSO, FT1, FTI, G20, GER, GGG, GLC, GLW, GQN, GTK, GTT, H11, HAB, HAM, HAV, HAW, HBH, HBW, HC1, HC3, HCI, HCS, HDM, HDO, HDW, HEC, HES, HFS, HFX, HGA, HGC, HGR, HGT, HGW, HHN, HHR, HHV, HIZ, HJC, HKC, HKP, HLA, HLB, HLE, HLG, HLR, HLS, HLT, HMS, HNB, HNM, HNP, HNR, HNT, HPD, HRB, HSA, HSP, HTE, HTK, HTR, HTT, HTU, HTW, HUG, HUX, HVA, HVG, HWS, I10, IBD, IDP, IHK, IKH, IME, IN4, IPH, IRC, ISG, JOS, KAC, KBE, KCE, KGM, KHL, KHW, KLM, KSE, KSK, KTB, KTC, KTL, L44, LAW, LBC, LCC, LCW, LDW, LG9, LGM, LLM, LM3, LMC, LMH, LMI, LNC, LQN, LTC, LWS, MBN, MC3, MCI, MCT, MDA, MEC, MEF, MEG, MES, MGC, MGG, MH3, MHP, MHY, MIE, MLC, MND, MPY, MQB, MQN, MTB, MTC, MTH, MTL, MTM, MTS, MVC, MVN, MVY, MXC, NAC, NAU, NBT, NCP, ND2, NDF, NDP, NDW, NHV, NJC, NLS, NNB, NNQ, NOS, NQB, NQT, NSG, NSL, NSS, NTB, NTF*, NTR, NTT, NVP, NWT, ONW, PAI, PBT, PCC, PEC, PEQ, PHH, PID, PIS, PIV, PJS, PKR, PLE, PLO, PMJ, PMT, PMW, PND, PNG, PNP, PPI, PQN, PRT, PSG, PSN, PTE, PTG, PTH, PTK, PTO, PTT, PTX, PVA, PVE, PVH, PVR, PVX, PVY, PWS, PX1, PXA, PXC, PXM, PYU, QBR, QLD, QLT, QNT, QNU, QNW, RAT, RBC, RCC, RCD, RHN, RLC, RTH, RTS, S12, S27, S72, S96, SAL, SAP, SB1, SBD, SBM, SBR*, SCA, SCC, SCO, SCY, SD1, SD8, SDB, SDE, SDH, SDV, SDX, SDY, SEP, SGO, SHG, SHX, SKN, SNC, SOV, SP2, SPA, SPB, SPC, SPH, SPP, SQC, SSF, SSG, SSU, STL, STS, STT, STU, STW, SUM, SVG, SVH, SVL, T12, TA3, TA6, TAG, TAN, TAP, TAW, TB8, TBT, TCJ, TCK, TDB, TDF, TEC, TEL, TH1, THN, THR, THW, TIE, TKA, TLI, TLT, TMG, TMW, TNM, TNP, TNW, TOP, TPS, TQN, TQW, TRS, TRT, TS3, TS5, TSG, TSJ, TTD, TTS, TTV, TUG, TV1, TVA, TVG, TVH, TVM, TVW, TW3, UCT, UDL, UEM*, UMC, UPC, USC, V11, V15, VAV, VBG, VBH, VC5, VCE, VCT, VCW, VDB, VDM, VDN, VDT, VES, VGL, VHF, VHH, VHI, VIR, VIW, VKD, VKP, VLF, VLP, VLW, VMA, VMG, VNI, VNX, VNY, VPC, VPR, VPW, VQC, VSF, VSG, VSP, VST, VTG, VTI, VTM, VVN, VWS, VXT, WTC, X26, X77, XDH, XLV, XMD, YBC, YRC, YTC
+2021-04-08 22:02:55.779 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Number of symbols inserted to Db for HOSE : 362.
+2021-04-08 22:02:55.927 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] End inserting price data for HOSE.
+2021-04-08 22:03:00.151 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.UpcomTimedHostedService] UPCOM - Ended crawling data.
+2021-04-08 22:03:03.758 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] HNX - Started crawling data.
+2021-04-08 22:03:03.758 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.UpcomTimedHostedService] UPCOM - Started crawling data.
+2021-04-08 22:03:03.758 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] HOSE - Started crawling data.
+2021-04-08 22:03:08.383 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Start inserting price data for HOSE.
+2021-04-08 22:03:08.728 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Start inserting price data for HOSE.
+2021-04-08 22:03:08.770 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Start inserting price data for HOSE.
+2021-04-08 22:03:16.537 [INF] [Microsoft.Hosting.Lifetime] Application is shutting down...
+2021-04-08 22:03:16.612 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.UpcomTimedHostedService] UPCOM background service is stopping.
+2021-04-08 22:03:16.629 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] HNX background service is stopping.
+2021-04-08 22:03:16.657 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] HOSE background service is stopping.
+2021-04-08 22:04:09.487 [INF] [] Starting web host
+2021-04-08 22:04:12.017 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] HOSE background service running.
+2021-04-08 22:04:12.021 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] HNX background service running.
+2021-04-08 22:04:12.022 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.UpcomTimedHostedService] UPCOM background service running.
+2021-04-08 22:04:12.023 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] HOSE - Started crawling data.
+2021-04-08 22:04:12.024 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] HNX - Started crawling data.
+2021-04-08 22:04:12.025 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.UpcomTimedHostedService] UPCOM - Started crawling data.
+2021-04-08 22:04:12.290 [INF] [Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2021-04-08 22:04:12.294 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2021-04-08 22:04:12.295 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+2021-04-08 22:04:12.295 [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\Phong-Laptop\source\repos\PhanTichChungKhoan\PhanTichChungKhoan.WebApp
+2021-04-08 22:04:16.674 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Start inserting price data for HNX.
+2021-04-08 22:04:16.674 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Start inserting price data for UPCOM.
+2021-04-08 22:04:16.676 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Start inserting price data for HOSE.
+2021-04-08 22:04:31.637 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Number of tr elements crawled on HNX : 360.
+2021-04-08 22:04:36.571 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Number of tr elements crawled on HOSE : 496.
+2021-04-08 22:04:40.124 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Number of tr elements crawled on UPCOM : 750.
+2021-04-08 22:05:14.762 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Could not get price of symbols: ABT, ALT, AMC, ARM, ATS, BED, BLF, BPC, BTW, BXH, CJC, CKV, CLM, CPC, CTB, CTC, CTT, DAD, DHP, DNC, DPS, EBA, ECI, GDW, HBE, HCT, HGM, HJS, HKB, HLC, HPM*, HTC, HVT, L35, L40, L62, LBE, LCD, LO5, MCC, MKV, NFC, NHC, NHP*, NTH, PBP, PEN, PHN, PIA, PMP, PPE, PPY, PRC, PSC, PTD, QST, SAF, SD2, SDG, SDN, SEB, SFN, SJ1, SJC, SMN, TBX, TET, TFC, THS, TJC, TSB, TTL, TTT, VAT, VBC, VC9, VIE, VIF, VLA, VMI, VMS, VNC, VTH, VTL, VXB
+2021-04-08 22:05:14.764 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Number of symbols inserted to Db for HNX : 275.
+2021-04-08 22:05:15.522 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] End inserting price data for HNX.
+2021-04-08 22:05:20.402 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] HNX - Ended crawling data.
+2021-04-08 22:05:31.168 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Could not get price of symbols: ATG, CLG, CMV, COM, DTL, DTT, EMC, FUCTVGF1, FUCTVGF2, HRC, HTL, L10, LBM, LGC, OPC, PGI, PME, SCD, SFC, SVI, TPC, VSI
+2021-04-08 22:05:31.170 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Number of symbols inserted to Db for HOSE : 474.
+2021-04-08 22:05:31.331 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] End inserting price data for HOSE.
+2021-04-08 22:05:35.532 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] HOSE - Ended crawling data.
+2021-04-08 22:05:50.350 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Could not get price of symbols: A32, AC4, ACS, ADP, AGF, AGX, ALV, AMP, APL, APT, AQN, ASA, ASD, ATA, ATD, AUM, AVC, AVF, B82, BBH, BBM, BCB, BCV, BDW, BEL, BGW, BHA, BHC, BHG, BHK, BHT, BIO, BKH, BLN, BLT, BLU, BLW, BMD, BMG, BMJ, BMN, BMV, BNW, BPW, BQB, BRS, BSD, BSH, BSQ, BT1, BT6, BTG, BTH, BTR, BTV, BVN, BXT, C12, C22, C36, CAB, CAD, CAM, CBC, CCA, CCH, CCP, CCT, CCV, CDG, CDH, CDR, CE1, CEC, CEG, CFM, CFV, CGL, CH5, CHC, CID, CKH, CMD, CMF, CMI, CMK, CMN, CMP, CMW, CNN, CPA, CPH, CPI, CPW, CSI, CT3, CT5, CT6, CTA, CTN, CTW, CVH, CXH, CYC, DAR, DBH, DBM, DBW, DCG, DCH, DCI, DCS, DCT, DDH, DDM, DFC, DHB, DHN, DIC, DKC, DKH, DLD, DLR, DLT, DM7, DNA, DNB, DND, DNH, DNL, DNN, DNS, DNT, DNY, DOC, DOP, DP2, DPD, DPP, DRG, DSP, DSS, DT4, DTB, DTE, DTG, DTV, DUS, DVW, DX2, DXD, DXL, E12, EAD, EFI, EIC, EME, EMG, EMS, EPC, FBA, FBC, FCC, FCS, FDG, FGL, FHN, FHS, FRM, FSO, FT1, FTI, G20, GER, GGG, GLC, GLW, GQN, GTK, GTT, H11, HAB, HAM, HAV, HAW, HBH, HBW, HC1, HC3, HCI, HCS, HDM, HDO, HDW, HEC, HES, HFS, HFX, HGA, HGC, HGR, HGT, HGW, HHN, HHR, HHV, HIZ, HJC, HKC, HKP, HLA, HLB, HLE, HLG, HLR, HLS, HLT, HMS, HNB, HNM, HNP, HNR, HNT, HPD, HRB, HSA, HSP, HTE, HTK, HTR, HTT, HTU, HTW, HUG, HUX, HVA, HVG, HWS, I10, IBD, IDP, IHK, IKH, IME, IN4, IPH, IRC, ISG, JOS, KAC, KBE, KCE, KGM, KHL, KHW, KLM, KSE, KSK, KTB, KTC, KTL, L44, LAW, LBC, LCC, LCW, LDW, LG9, LGM, LLM, LM3, LMC, LMH, LMI, LNC, LQN, LTC, LWS, MBN, MC3, MCI, MCT, MDA, MEC, MEF, MEG, MES, MGC, MGG, MH3, MHP, MHY, MIE, MLC, MND, MPY, MQB, MQN, MTB, MTC, MTH, MTL, MTM, MTS, MVC, MVN, MVY, MXC, NAC, NAU, NBT, NCP, ND2, NDF, NDP, NDW, NHV, NJC, NLS, NNB, NNQ, NOS, NQB, NQT, NSG, NSL, NSS, NTB, NTF*, NTR, NTT, NVP, NWT, ONW, PAI, PBT, PCC, PEC, PEQ, PHH, PID, PIS, PIV, PJS, PKR, PLE, PLO, PMJ, PMT, PMW, PND, PNG, PNP, PPI, PQN, PRT, PSG, PSN, PTE, PTG, PTH, PTK, PTO, PTT, PTX, PVA, PVE, PVH, PVR, PVX, PVY, PWS, PX1, PXA, PXC, PXM, PYU, QBR, QLD, QLT, QNT, QNU, QNW, RAT, RBC, RCC, RCD, RHN, RLC, RTH, RTS, S12, S27, S72, S96, SAL, SAP, SB1, SBD, SBM, SBR*, SCA, SCC, SCO, SCY, SD1, SD8, SDB, SDE, SDH, SDV, SDX, SDY, SEP, SGO, SHG, SHX, SKN, SNC, SOV, SP2, SPA, SPB, SPC, SPH, SPP, SQC, SSF, SSG, SSU, STL, STS, STT, STU, STW, SUM, SVG, SVH, SVL, T12, TA3, TA6, TAG, TAN, TAP, TAW, TB8, TBT, TCJ, TCK, TDB, TDF, TEC, TEL, TH1, THN
+2021-04-08 22:05:50.352 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Number of symbols inserted to Db for UPCOM : 294.
+2021-04-08 22:05:50.457 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] End inserting price data for UPCOM.
+2021-04-08 22:05:54.678 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.UpcomTimedHostedService] UPCOM - Ended crawling data.
+2021-04-08 22:06:12.022 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] HOSE - Started crawling data.
+2021-04-08 22:06:12.022 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.UpcomTimedHostedService] UPCOM - Started crawling data.
+2021-04-08 22:06:12.022 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] HNX - Started crawling data.
+2021-04-08 22:06:16.718 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Start inserting price data for HNX.
+2021-04-08 22:06:16.960 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Start inserting price data for HOSE.
+2021-04-08 22:06:16.961 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Start inserting price data for UPCOM.
+2021-04-08 22:06:31.760 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Number of tr elements crawled on HNX : 360.
+2021-04-08 22:06:38.492 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Number of tr elements crawled on HOSE : 496.
+2021-04-08 22:06:44.207 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Number of tr elements crawled on UPCOM : 850.
+2021-04-08 22:07:16.059 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Could not get price of symbols: ABT, ALT, AMC, ARM, ATS, BED, BLF, BPC, BTW, BXH, CJC, CKV, CLM, CPC, CTB, CTC, CTT, DAD, DHP, DNC, DPS, EBA, ECI, GDW, HBE, HCT, HGM, HJS, HKB, HLC, HPM*, HTC, HVT, L35, L40, L62, LBE, LCD, LO5, MCC, MKV, NFC, NHC, NHP*, NTH, PBP, PEN, PHN, PIA, PMP, PPE, PPY, PRC, PSC, PTD, QST, SAF, SD2, SDG, SDN, SEB, SFN, SJ1, SJC, SMN, TBX, TET, TFC, THS, TJC, TSB, TTL, TTT, VAT, VBC, VC9, VIE, VIF, VLA, VMI, VMS, VNC, VTH, VTL, VXB
+2021-04-08 22:07:16.063 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Number of symbols inserted to Db for HNX : 275.
+2021-04-08 22:07:16.190 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] End inserting price data for HNX.
+2021-04-08 22:07:20.848 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] HNX - Ended crawling data.
+2021-04-08 22:07:28.018 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Could not get price of symbols: ATG, CLG, CMV, COM, DTL, DTT, EMC, FUCTVGF1, FUCTVGF2, HRC, HTL, L10, LBM, LGC, OPC, PGI, PME, SCD, SFC, SVI, TPC, VSI
+2021-04-08 22:07:28.019 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Number of symbols inserted to Db for HOSE : 474.
+2021-04-08 22:07:28.136 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] End inserting price data for HOSE.
+2021-04-08 22:07:32.362 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] HOSE - Ended crawling data.
+2021-04-08 22:08:01.111 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Could not get price of symbols: A32, AC4, ACS, ADP, AGF, AGX, ALV, AMP, APL, APT, AQN, ASA, ASD, ATA, ATD, AUM, AVC, AVF, B82, BBH, BBM, BCB, BCV, BDW, BEL, BGW, BHA, BHC, BHG, BHK, BHT, BIO, BKH, BLN, BLT, BLU, BLW, BMD, BMG, BMJ, BMN, BMV, BNW, BPW, BQB, BRS, BSD, BSH, BSQ, BT1, BT6, BTG, BTH, BTR, BTV, BVN, BXT, C12, C22, C36, CAB, CAD, CAM, CBC, CCA, CCH, CCP, CCT, CCV, CDG, CDH, CDR, CE1, CEC, CEG, CFM, CFV, CGL, CH5, CHC, CID, CKH, CMD, CMF, CMI, CMK, CMN, CMP, CMW, CNN, CPA, CPH, CPI, CPW, CSI, CT3, CT5, CT6, CTA, CTN, CTW, CVH, CXH, CYC, DAR, DBH, DBM, DBW, DCG, DCH, DCI, DCS, DCT, DDH, DDM, DFC, DHB, DHN, DIC, DKC, DKH, DLD, DLR, DLT, DM7, DNA, DNB, DND, DNH, DNL, DNN, DNS, DNT, DNY, DOC, DOP, DP2, DPD, DPP, DRG, DSP, DSS, DT4, DTB, DTE, DTG, DTV, DUS, DVW, DX2, DXD, DXL, E12, EAD, EFI, EIC, EME, EMG, EMS, EPC, FBA, FBC, FCC, FCS, FDG, FGL, FHN, FHS, FRM, FSO, FT1, FTI, G20, GER, GGG, GLC, GLW, GQN, GTK, GTT, H11, HAB, HAM, HAV, HAW, HBH, HBW, HC1, HC3, HCI, HCS, HDM, HDO, HDW, HEC, HES, HFS, HFX, HGA, HGC, HGR, HGT, HGW, HHN, HHR, HHV, HIZ, HJC, HKC, HKP, HLA, HLB, HLE, HLG, HLR, HLS, HLT, HMS, HNB, HNM, HNP, HNR, HNT, HPD, HRB, HSA, HSP, HTE, HTK, HTR, HTT, HTU, HTW, HUG, HUX, HVA, HVG, HWS, I10, IBD, IDP, IHK, IKH, IME, IN4, IPH, IRC, ISG, JOS, KAC, KBE, KCE, KGM, KHL, KHW, KLM, KSE, KSK, KTB, KTC, KTL, L44, LAW, LBC, LCC, LCW, LDW, LG9, LGM, LLM, LM3, LMC, LMH, LMI, LNC, LQN, LTC, LWS, MBN, MC3, MCI, MCT, MDA, MEC, MEF, MEG, MES, MGC, MGG, MH3, MHP, MHY, MIE, MLC, MND, MPY, MQB, MQN, MTB, MTC, MTH, MTL, MTM, MTS, MVC, MVN, MVY, MXC, NAC, NAU, NBT, NCP, ND2, NDF, NDP, NDW, NHV, NJC, NLS, NNB, NNQ, NOS, NQB, NQT, NSG, NSL, NSS, NTB, NTF*, NTR, NTT, NVP, NWT, ONW, PAI, PBT, PCC, PEC, PEQ, PHH, PID, PIS, PIV, PJS, PKR, PLE, PLO, PMJ, PMT, PMW, PND, PNG, PNP, PPI, PQN, PRT, PSG, PSN, PTE, PTG, PTH, PTK, PTO, PTT, PTX, PVA, PVE, PVH, PVR, PVX, PVY, PWS, PX1, PXA, PXC, PXM, PYU, QBR, QLD, QLT, QNT, QNU, QNW, RAT, RBC, RCC, RCD, RHN, RLC, RTH, RTS, S12, S27, S72, S96, SAL, SAP, SB1, SBD, SBM, SBR*, SCA, SCC, SCO, SCY, SD1, SD8, SDB, SDE, SDH, SDV, SDX, SDY, SEP, SGO, SHG, SHX, SKN, SNC, SOV, SP2, SPA, SPB, SPC, SPH, SPP, SQC, SSF, SSG, SSU, STL, STS, STT, STU, STW, SUM, SVG, SVH, SVL, T12, TA3, TA6, TAG, TAN, TAP, TAW, TB8, TBT, TCJ, TCK, TDB, TDF, TEC, TEL, TH1, THN, THR, THW, TIE, TKA, TLI, TLT, TMG, TMW, TNM, TNP, TNW, TOP, TPS, TQN, TQW, TRS, TRT, TS3, TS5, TSG, TSJ, TTD, TTS, TTV, TUG, TV1, TVA, TVG, TVH, TVM, TVW, TW3, UCT, UDL, UEM*, UMC, UPC, USC, V11, V15, VAV, VBG, VBH, VC5, VCE, VCT, VCW, VDB, VDM, VDN, VDT, VES, VGL, VHF, VHH, VHI, VIR
+2021-04-08 22:08:01.113 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Number of symbols inserted to Db for UPCOM : 337.
+2021-04-08 22:08:01.230 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] End inserting price data for UPCOM.
+2021-04-08 22:08:05.433 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.UpcomTimedHostedService] UPCOM - Ended crawling data.
+2021-04-08 22:08:07.450 [INF] [Microsoft.Hosting.Lifetime] Application is shutting down...
+2021-04-08 22:08:07.487 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.UpcomTimedHostedService] UPCOM background service is stopping.
+2021-04-08 22:08:07.490 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] HNX background service is stopping.
+2021-04-08 22:08:07.491 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] HOSE background service is stopping.

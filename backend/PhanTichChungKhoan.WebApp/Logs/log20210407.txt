@@ -1,0 +1,97 @@
+2021-04-07 21:09:40.247 [INF] [] Starting web host
+2021-04-07 21:09:45.209 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] VnDirect background service running.
+2021-04-07 21:09:45.217 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] Started crawling data.
+2021-04-07 21:09:45.674 [INF] [Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2021-04-07 21:09:45.679 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2021-04-07 21:09:45.680 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+2021-04-07 21:09:45.683 [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\Phong-Laptop\source\repos\PhanTichChungKhoan\PhanTichChungKhoan.WebApp
+2021-04-07 21:09:48.535 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Start inserting price data for HOSE.
+2021-04-07 21:10:12.137 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Number of tr elements crawled on HOSE : 502.
+2021-04-07 21:12:23.164 [INF] [] Starting web host
+2021-04-07 21:12:26.943 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] VnDirect background service running.
+2021-04-07 21:12:26.950 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] Started crawling data.
+2021-04-07 21:12:27.263 [INF] [Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2021-04-07 21:12:27.268 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2021-04-07 21:12:27.270 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+2021-04-07 21:12:27.271 [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\Phong-Laptop\source\repos\PhanTichChungKhoan\PhanTichChungKhoan.WebApp
+2021-04-07 21:12:29.116 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Start inserting price data for HOSE.
+2021-04-07 21:12:41.244 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Number of tr elements crawled on HOSE : 502.
+2021-04-07 21:13:02.542 [INF] [Microsoft.Hosting.Lifetime] Application is shutting down...
+2021-04-07 21:13:04.231 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] VnDirect background service is stopping.
+2021-04-07 21:21:50.274 [INF] [] Starting web host
+2021-04-07 21:21:53.345 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] VnDirect background service running.
+2021-04-07 21:21:53.351 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] Started crawling data.
+2021-04-07 21:21:53.678 [INF] [Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2021-04-07 21:21:53.681 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2021-04-07 21:21:53.682 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+2021-04-07 21:21:53.684 [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\Phong-Laptop\source\repos\PhanTichChungKhoan\PhanTichChungKhoan.WebApp
+2021-04-07 21:21:55.382 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Start inserting price data for HOSE.
+2021-04-07 21:22:17.861 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Number of tr elements crawled on HOSE : 502.
+2021-04-07 21:23:04.651 [INF] [Microsoft.Hosting.Lifetime] Application is shutting down...
+2021-04-07 21:23:04.693 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] VnDirect background service is stopping.
+2021-04-07 21:48:44.645 [INF] [] Starting web host
+2021-04-07 21:48:49.067 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] VnDirect background service running.
+2021-04-07 21:48:49.076 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] Started crawling data.
+2021-04-07 21:48:49.700 [INF] [Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2021-04-07 21:48:49.710 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2021-04-07 21:48:49.714 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+2021-04-07 21:48:49.718 [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\Phong-Laptop\source\repos\PhanTichChungKhoan\PhanTichChungKhoan.WebApp
+2021-04-07 21:48:52.102 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Start inserting price data for HOSE.
+2021-04-07 21:49:11.465 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Number of tr elements crawled on HOSE : 502.
+2021-04-07 21:50:32.316 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Could not get price of symbols: ATG, CFPT2014, CLG, COM, DAT, DTL, DTT, FUCTVGF1, FUCTVGF2, HRC, L10, LAF, LBM, LGC, NAV, PDN, PNC, SFC, THI, TRC, VMD
+2021-04-07 21:50:32.321 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Number of symbols inserted to Db for HOSE : 481.
+2021-04-07 21:50:33.380 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] End inserting price data for HOSE.
+2021-04-07 21:50:33.385 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Start inserting price data for HNX.
+2021-04-07 21:50:49.891 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Number of tr elements crawled on HNX : 360.
+2021-04-07 21:51:33.511 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Could not get price of symbols: ADC, ALT, AMC, ARM, ATS, BED, BLF, BPC, BSC, BTW, BXH, CJC, CKV, CLM, CTB, CTC, CTT, DNC, DPC, DPS, EBA, ECI, GDW, HBE, HCT, HGM, HJS, HKB, HPM, HTC, HVT, KHS, KMT, KST, L35, L40, L62, LCD, LO5, MCC, MED, MEL, MKV, NFC, NHC, NHP, NTH, PEN, PHN, PIA, PMP, PPE, PRC, PSC, PSW, PTD, S55, SAF, SD2*, SDG, SFN, SGD, SGH, SJC, SSC, TBX*, TET, THS, TJC, TPH, TSB, TST, VAT, VC9, VE2, VFG, VIE, VLA, VMI, VMS, VNF, VTH, VTL, X20
+2021-04-07 21:51:33.517 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Number of symbols inserted to Db for HNX : 276.
+2021-04-07 21:51:33.847 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] End inserting price data for HNX.
+2021-04-07 21:51:38.362 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] Ended crawling data.
+2021-04-07 21:52:33.258 [INF] [PhanTichChungKhoan.WebApp.Areas.Identity.Pages.Account.LoginModel] User logged in.
+2021-04-07 21:52:49.088 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] Started crawling data.
+2021-04-07 21:52:51.418 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Start inserting price data for HOSE.
+2021-04-07 21:53:15.270 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Number of tr elements crawled on HOSE : 502.
+2021-04-07 21:54:05.341 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Could not get price of symbols: ATG, CFPT2014, CLG, COM, DAT, DTL, DTT, FUCTVGF1, FUCTVGF2, HRC, L10, LAF, LBM, LGC, NAV, PDN, PNC, SFC, THI, TRC, VMD
+2021-04-07 21:54:05.343 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Number of symbols inserted to Db for HOSE : 481.
+2021-04-07 21:54:05.573 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] End inserting price data for HOSE.
+2021-04-07 21:54:05.574 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Start inserting price data for HNX.
+2021-04-07 21:54:11.515 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Number of tr elements crawled on HNX : 360.
+2021-04-07 21:54:34.860 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Could not get price of symbols: ADC, ALT, AMC, ARM, ATS, BED, BLF, BPC, BSC, BTW, BXH, CJC, CKV, CLM, CTB, CTC, CTT, DNC, DPC, DPS, EBA, ECI, GDW, HBE, HCT, HGM, HJS, HKB, HPM, HTC, HVT, KHS, KMT, KST, L35, L40, L62, LCD, LO5, MCC, MED, MEL, MKV, NFC, NHC, NHP, NTH, PEN, PHN, PIA, PMP, PPE, PRC, PSC, PSW, PTD, S55, SAF, SD2*, SDG, SFN, SGD, SGH, SJC, SSC, TBX*, TET, THS, TJC, TPH, TSB, TST, VAT, VC9, VE2, VFG, VIE, VLA, VMI, VMS, VNF, VTH, VTL, X20
+2021-04-07 21:54:34.862 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Number of symbols inserted to Db for HNX : 276.
+2021-04-07 21:54:34.919 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] End inserting price data for HNX.
+2021-04-07 21:54:39.157 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] Ended crawling data.
+2021-04-07 21:54:41.407 [INF] [Microsoft.Hosting.Lifetime] Application is shutting down...
+2021-04-07 21:54:41.437 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] VnDirect background service is stopping.
+2021-04-07 22:11:09.070 [INF] [] Starting web host
+2021-04-07 22:11:11.507 [INF] [Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2021-04-07 22:11:11.513 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2021-04-07 22:11:11.515 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+2021-04-07 22:11:11.516 [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\Phong-Laptop\source\repos\PhanTichChungKhoan\PhanTichChungKhoan.WebApp
+2021-04-07 22:27:17.824 [INF] [] Starting web host
+2021-04-07 22:27:20.225 [INF] [Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2021-04-07 22:27:20.231 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2021-04-07 22:27:20.232 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+2021-04-07 22:27:20.233 [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\Phong-Laptop\source\repos\PhanTichChungKhoan\PhanTichChungKhoan.WebApp
+2021-04-07 22:27:40.275 [INF] [Microsoft.Hosting.Lifetime] Application is shutting down...
+2021-04-07 22:29:20.189 [INF] [] Starting web host
+2021-04-07 22:29:22.572 [INF] [Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2021-04-07 22:29:22.578 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2021-04-07 22:29:22.580 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+2021-04-07 22:29:22.581 [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\Phong-Laptop\source\repos\PhanTichChungKhoan\PhanTichChungKhoan.WebApp
+2021-04-07 22:30:57.337 [INF] [] Starting web host
+2021-04-07 22:30:59.837 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] VnDirect background service running.
+2021-04-07 22:30:59.844 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.VnDirectTimedHostedService] Started crawling data.
+2021-04-07 22:31:00.073 [INF] [Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2021-04-07 22:31:00.077 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2021-04-07 22:31:00.078 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+2021-04-07 22:31:00.079 [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\Phong-Laptop\source\repos\PhanTichChungKhoan\PhanTichChungKhoan.WebApp
+2021-04-07 22:31:01.262 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Start inserting price data for HOSE.
+2021-04-07 22:31:11.981 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Number of tr elements crawled on HOSE : 502.
+2021-04-07 22:32:05.553 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Could not get price of symbols: ATG, CFPT2014, CLG, COM, DAT, DTL, DTT, FUCTVGF1, FUCTVGF2, HRC, L10, LAF, LBM, LGC, NAV, PDN, PNC, SFC, THI, TRC, VMD
+2021-04-07 22:32:05.555 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Number of symbols inserted to Db for HOSE : 481.
+2021-04-07 22:32:05.904 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] End inserting price data for HOSE.
+2021-04-07 22:32:05.906 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Start inserting price data for HNX.
+2021-04-07 22:32:11.623 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Number of tr elements crawled on HNX : 360.
+2021-04-07 22:32:34.582 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Could not get price of symbols: ADC, ALT, AMC, ARM, ATS, BED, BLF, BPC, BSC, BTW, BXH, CJC, CKV, CLM, CTB, CTC, CTT, DNC, DPC, DPS, EBA, ECI, GDW, HBE, HCT, HGM, HJS, HKB, HPM, HTC, HVT, KHS, KMT, KST, L35, L40, L62, LCD, LO5, MCC, MED, MEL, MKV, NFC, NHC, NHP, NTH, PEN, PHN, PIA, PMP, PPE, PRC, PSC, PSW, PTD, S55, SAF, SD2*, SDG, SFN, SGD, SGH, SJC, SSC, TBX*, TET, THS, TJC, TPH, TSB, TST, VAT, VC9, VE2, VFG, VIE, VLA, VMI, VMS, VNF, VTH, VTL, X20
+2021-04-07 22:32:34.585 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] Number of symbols inserted to Db for HNX : 276.
+2021-04-07 22:32:34.644 [INF] [PhanTichChungKhoan.Application.VnDirectCrawler] End inserting price data for HNX.

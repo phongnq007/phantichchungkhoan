@@ -1,0 +1,41 @@
+﻿@page
+@model PhanTichChungKhoan.WebApp.Pages.CreateBuyingRangeModel
+@{
+    ViewData["Title"] = "TestCreate";
+}
+
+<h4>Create buying range</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="BuyingRange.Symbol" class="control-label"></label>
+                <input asp-for="BuyingRange.Symbol" class="form-control" />
+                <span asp-validation-for="BuyingRange.Symbol" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BuyingRange.BuyPriceFrom" class="control-label"></label>
+                <input asp-for="BuyingRange.BuyPriceFrom" class="form-control" />
+                <span asp-validation-for="BuyingRange.BuyPriceFrom" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BuyingRange.BuyPriceTo" class="control-label"></label>
+                <input asp-for="BuyingRange.BuyPriceTo" class="form-control" />
+                <span asp-validation-for="BuyingRange.BuyPriceTo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="text-center">
+    <a asp-page="Portfolio">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

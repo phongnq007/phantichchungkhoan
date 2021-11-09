@@ -1,0 +1,7 @@
+2021-04-13 22:06:36.922 [INF] [] Starting web host at 13/04/2021 22:06:36.918
+2021-04-13 22:06:45.656 [INF] [Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5000
+2021-04-13 22:06:45.662 [INF] [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2021-04-13 22:06:45.664 [INF] [Microsoft.Hosting.Lifetime] Hosting environment: Development
+2021-04-13 22:06:45.664 [INF] [Microsoft.Hosting.Lifetime] Content root path: C:\Users\Phong-Laptop\source\repos\PhanTichChungKhoan\PhanTichChungKhoan.WebApp
+2021-04-13 22:10:25.906 [INF] [Microsoft.Hosting.Lifetime] Application is shutting down...
+2021-04-13 22:10:25.974 [INF] [PhanTichChungKhoan.WebApp.BackgroundServices.HoseTimedHostedService] HOSE background service is stopping.
